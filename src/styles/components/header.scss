@@ -1,10 +1,47 @@
 .header {
     position: fixed;
     width: 100%;
-    height: 128px;
+    height: 135px;
     z-index: 4;
 
     @include media("<=phone") {
         height: 96px;
+    }
+    .container {
+        .row {
+            .left {
+                .element {
+                    font-size: 15px;
+                    display: inline-block;
+                    padding-right: 2vw;
+                }
+            }
+            .logo {
+                .element {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    svg {
+                        padding: 12px;
+                        width: 25vw;
+                        @include media("<=tablet") {
+                            padding: 8px;
+                            width: 15vw;
+                        }
+                        @include media("<=phone") {
+                            padding: 4px;
+                            width: 10vw;
+                        }
+                    }
+                }
+            }
+            .right {
+                .element {
+                    display: inline-block;
+                    padding-left: 2vw;
+                }
+            }
+        }
     }
 }

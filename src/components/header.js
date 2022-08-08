@@ -4,24 +4,27 @@ import { ReactComponent as Heart } from "../assets/heart.svg";
 import { ReactComponent as Cart } from "../assets/cart.svg";
 import { ReactComponent as Account } from "../assets/account.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
+import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
         <div className="header">
             <div className="container">
                 <div className="row v-center space-between">
-                    <div className="left">
-                        <div className="element">Home</div>
-                        <div className="element">Shop</div>
-                        <div className="element">About</div>
-                        <div className="element">Contact</div>
+                    <div className="left col">
+                        <div className="element btn-row">Home</div>
+                        <div className="element btn-row">Shop</div>
+                        <div className="element btn-row">About</div>
+                        <div className="element btn-row">Contact</div>
                     </div>
-                    <div className="logo">
+                    <div className="logo col">
                         <div className="element">
-                            <Logo />
+                            <a href="/">
+                                <Logo />
+                            </a>
                         </div>
                     </div>
-                    <div className="right">
+                    <div className="right col">
                         <div className="element btn-row">
                             <Search />
                         </div>

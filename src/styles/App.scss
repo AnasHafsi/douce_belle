@@ -3,29 +3,34 @@
 @import "./breakpoints.scss";
 @import "./components/header.scss";
 
+@font-face {
+  font-family: GraphikWeb;
+  src: url("../assets/fonts/GraphikRegular.otf") format("opentype");
+  font-weight: 400;
+}
+
 body,
 html {
   user-select: none;
   background: $white;
   overscroll-behavior: none;
   margin: 0;
-  font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "GraphikWeb";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  width: 1560px;
-  min-width: 1560px;
+  //width: 1440px;
+  min-width: 1440px;
   margin: 0 auto;
   height: 100%;
   @include media("<=1560px") {
-    width: 1280px;
-    min-width: 1280px;
+    //width: 1440px;
+    min-width: 1440px;
   }
   @include media("<=desktop") {
-    width: 1080px;
+    //width: 1080px;
     min-width: 1080px;
   }
   @include media("<=1080px") {
