@@ -4,7 +4,6 @@ import { ReactComponent as Heart } from "../assets/heart.svg";
 import { ReactComponent as Cart } from "../assets/cart.svg";
 import { ReactComponent as Account } from "../assets/account.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
-import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
